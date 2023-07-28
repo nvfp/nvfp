@@ -12,12 +12,22 @@ STAT_FILE_PATH = os.path.join(REPO_ROOT_DIR, 'stats', 'total_pub_repo.json')
 def main():
     print(f'DEBUG: REPO_ROOT_DIR : {repr(REPO_ROOT_DIR)}.')
     print(f'DEBUG: STAT_FILE_PATH: {repr(STAT_FILE_PATH)}.')
-    
+
+    ## Checks
+    if not os.path.isfile(STAT_FILE_PATH):
+        raise FileNotFoundError(f'File not found: {repr(STAT_FILE_PATH)}.')
+
     with open(STAT_FILE_PATH) as f:
         stats = json.load(f)
 
     command = ['gh', 'repo', 'list', 'nvfp', '--visibility', 'public', '--json', 'name']
     output = sp.check_output(command, text=True)
+    print(output)
+    print('---')
+    print(type(output))
+    print('---')
+    print(repr(output))
+    print('---')
     data = json.loads(output)
     print(data)
     print('---')
