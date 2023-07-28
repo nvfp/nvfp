@@ -12,7 +12,9 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v3
-      - run: python scripts/update_total_pub_repo.py
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/update_total_pub_repo.py
       - run: |
           git config user.name "Update stats"
           git config user.email "nicho@scapeville.com"
