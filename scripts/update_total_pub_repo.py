@@ -5,7 +5,7 @@ import subprocess as sp
 import time
 
 
-REPO_ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abs(__file__)))
+REPO_ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STAT_FILE_PATH = os.path.join(REPO_ROOT_DIR, 'stats', 'total_pub_repo.json')
 
 
