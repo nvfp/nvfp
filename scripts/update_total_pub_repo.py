@@ -22,18 +22,35 @@ def main():
 
     command = ['gh', 'repo', 'list', 'nvfp', '--visibility', 'public', '--json', 'name']
     output = sp.check_output(command, text=True)
-    print(output)
-    print('---')
-    print(type(output))
-    print('---')
-    print(repr(output))
-    print('---')
+    # print(output)
+    # print('---')
+    # print(type(output))
+    # print('---')
+    # print(repr(output))
+    # print('---')
     data = json.loads(output)
-    print(data)
-    print('---')
-    print(type(data))
-    print('---')
-    print(repr(data))
+    # print(data)
+    # print('---')
+    # print(type(data))
+    # print('---')
+    # print(repr(data))
+
+    ts = time.time()
+    while ts in stats: ts = time.time()
+    stats[ts] = {
+        'num_pub_repos': len(data),
+        'year': datetime.datetime.fromtimestamp(ts).strftime('%Y'),
+        'month': [
+            datetime.datetime.fromtimestamp(ts).strftime('%B'),
+            datetime.datetime.fromtimestamp(ts).strftime('%-m'),
+        ],
+        'date': datetime.datetime.fromtimestamp(ts).strftime('%-d'),
+        'clock': [
+            datetime.datetime.fromtimestamp(ts).strftime('%H'),
+            datetime.datetime.fromtimestamp(ts).strftime('%M'),
+            datetime.datetime.fromtimestamp(ts).strftime('%S'),
+        ]
+    }
 
     with open(STAT_FILE_PATH, 'w') as f:
         json.dump(stats, f, indent=4)
