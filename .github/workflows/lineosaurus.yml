@@ -11,6 +11,8 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
       - run: echo $(date +'%Y %b %e, %l:%M %p') > foo123123.txt
