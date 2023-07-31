@@ -4,9 +4,12 @@ on:
   schedule:
     - cron: '0 0 * * *'
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - uses: scapeville/action-git-add-all-then-commit-then-push@0.1.0
+      - uses: scapeville/action-git-add-all-then-commit-then-push@0.2.0
