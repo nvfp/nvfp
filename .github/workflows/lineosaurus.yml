@@ -17,3 +17,5 @@ jobs:
       - uses: scapeville/action-git-add-all-then-commit-then-push@0.5.0
         with:
           name: foobar
+        env:
+          GH_TOKEN: ${{ github.token }}
