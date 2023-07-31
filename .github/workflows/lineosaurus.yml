@@ -14,6 +14,6 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: nvfp/Line-O-Saurus@0.1.2
+      - uses: nvfp/Line-O-Saurus@0.1.3
         with:
-          show-credit: abc
+          show-credit: "[1, 3, '4']"
