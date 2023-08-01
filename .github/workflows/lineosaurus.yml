@@ -14,7 +14,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: nvfp/Line-O-Saurus@0.4.5
+      - uses: nvfp/Line-O-Saurus@0.4.6
         with:
           git-name: Lineosaurus
           git-email: nicho@scapeville.com
