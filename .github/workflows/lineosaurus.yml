@@ -14,7 +14,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: nvfp/Line-O-Saurus@0.2.5
+      - uses: nvfp/Line-O-Saurus@0.2.6
         with:
           show-credit: "[1, 3, '4']"
         env:
