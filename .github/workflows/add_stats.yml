@@ -16,26 +16,20 @@ jobs:
       max-parallel: 1  # This is used to prevent commit collisions when multiple jobs are trying to commit all at once
       matrix:
         names:
-          - foo1
-          - bar2
-          - baz3
+          - update_num_pub_repos
+          - update_num_stargazers
     steps:
-      - run: |
-          echo "hi"
-          sleep 10
-          echo "names: ${{ matrix.names }}"
-    #   - uses: actions/checkout@v3
-    #   - run: |
-    #       python scripts/update_num_pub_repos.py
-    #       python scripts/update_num_stargazers.py
-    #     env:
-    #       GH_TOKEN: ${{ github.token }}
-    #   - uses: actions/checkout@v3
-    #     with:
-    #       ref: archive-stats
-    #   - run: python archive_manager.py
-    #   - uses: scapeville/action-git-add-all-then-commit-then-push@v1
-    #     with:
-    #       name: Stats
-    #       email: nicho@scapeville.com
-    #       msg: "Updated on $(date +'%Y %b %e, %l:%M %p')"
+      - uses: actions/checkout@v3
+      - run: python scripts/${{ matrix.names }}.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - uses: actions/checkout@v3
+        with:
+          ref: archive-stats
+      - run: python archive_manager.py
+      - run: git log  # Debugging purposes
+      - uses: scapeville/action-git-add-all-then-commit-then-push@v1
+        with:
+          name: Stats
+          email: nicho@scapeville.com
+          msg: "Update `${{ matrix.names }}` — $(date +'%Y %b %e, %l:%M %p')"
