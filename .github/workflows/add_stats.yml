@@ -4,20 +4,33 @@ on:
   schedule:
     - cron: '0 0 * * *' # Runs every day at 00:00 UTC time
   workflow_dispatch:
+  push:
+    branches: [main]
 
 jobs:
   run:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    strategy:
+      matrix:
+        names: ['foo', 'bar', 'baz']
     steps:
-      - uses: actions/checkout@v3
-      - env:
-          GH_TOKEN: ${{ github.token }}
-        run: python scripts/update_total_pub_repo.py
       - run: |
-          git config user.name "Update stats"
-          git config user.email "nicho@scapeville.com"
-          git add .
-          git commit -m "Stats updated on $(date +'%B %d, %Y, %l:%M %p')"
-          git push
+          echo "hi"
+          echo "names: ${{ matrix.names }}"
+    #   - uses: actions/checkout@v3
+    #   - run: |
+    #       python scripts/update_num_pub_repos.py
+    #       python scripts/update_num_stargazers.py
+    #     env:
+    #       GH_TOKEN: ${{ github.token }}
+    #   - uses: actions/checkout@v3
+    #     with:
+    #       ref: archive-stats
+    #   - run: python archive_manager.py
+    #   - uses: scapeville/action-git-add-all-then-commit-then-push@v1
+    #     with:
+    #       name: Stats
+    #       email: nicho@scapeville.com
+    #       msg: "Updated on $(date +'%Y %b %e, %l:%M %p')"
