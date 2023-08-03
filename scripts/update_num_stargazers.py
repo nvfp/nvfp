@@ -11,18 +11,18 @@ from scripts.utils import get_stats_name, shipping
 
 def main():
 
-    cmd = ['gh', 'repo', 'list', 'nvfp', '--visibility', 'public', '--json', 'name']
+    cmd = ['gh', 'repo', 'list', 'nvfp', '--visibility', 'public', '--json', 'stargazerCount']
     output = sp.check_output(cmd, text=True)
 
     parsed = json.loads(output)
-    num_pub_repos = len(parsed)
+    num_stargazers = sum([d['stargazerCount'] for d in parsed])
     print(f'DEBUG: parsed: {parsed}')
-    print(f'DEBUG: num_pub_repos: {num_pub_repos}')
+    print(f'DEBUG: num_stargazers: {num_stargazers}')
 
     NAME = get_stats_name(os.path.basename(__file__))
     TIME = datetime.now(timezone.utc).isoformat()    
 
-    data = [TIME, num_pub_repos]
+    data = [TIME, num_stargazers]
     shipping(NAME, data)
 
 
