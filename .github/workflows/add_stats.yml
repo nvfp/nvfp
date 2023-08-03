@@ -8,17 +8,18 @@ on:
     branches: [main]
 
 jobs:
-  run:
+  update:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     strategy:
+      max-parallel: 1
       matrix:
-        names: ['foo', 'bar', 'baz', 'qux']
+        names: ['foo', 'bar', 'baz', 'qux', 'quuz']
     steps:
       - run: |
           echo "hi"
-          sleep 30
+          sleep 10
           echo "names: ${{ matrix.names }}"
     #   - uses: actions/checkout@v3
     #   - run: |
