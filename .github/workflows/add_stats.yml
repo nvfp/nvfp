@@ -26,8 +26,10 @@ jobs:
           ref: archive-stats
       - run: python archive_manager.py
       - run: git log  # Debugging purposes
+      - run: echo "time=$(date +'%Y %b %e, %l:%M %p')" >> $GITHUB_OUTPUT  # Handler. Since `msg` arg will treats string as literal
+        id: time
       - uses: scapeville/action-git-add-all-then-commit-then-push@v1
         with:
           name: Stats
           email: nicho@scapeville.com
-          msg: "Update `${{ matrix.names }}` — $(date +'%Y %b %e, %l:%M %p')"
+          msg: "`${{ matrix.names }}` — ${{ steps.time.outputs.time }}"
