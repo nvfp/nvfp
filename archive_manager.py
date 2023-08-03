@@ -34,8 +34,7 @@ def main():
         num_data = len(db)
         print(f'DEBUG: num_data: {num_data}.')
 
-        if num_data == 7:  # Testing purposes
-        # if num_data == 1000:
+        if num_data == 256:
             TARGET = os.path.join(NAME, f'archive-{NUM_ARCHIVES + 1}.json')
             print(f'DEBUG: New target: TARGET: {repr(TARGET)}.')
             db = []
