@@ -1,0 +1,1 @@
+Statistics updater scripts must have a file name with the pattern: update_<NAME>.py
