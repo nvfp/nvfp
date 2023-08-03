@@ -4,7 +4,7 @@ import subprocess as sp
 import sys
 from datetime import datetime, timezone
 
-# sys.path.append(os.environ['GITHUB_WORKSPACE'])
+sys.path.append(os.environ['GITHUB_WORKSPACE'])
 
 from scripts.utils import get_stats_name, shipping
 
