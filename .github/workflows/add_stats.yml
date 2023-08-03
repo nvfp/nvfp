@@ -12,10 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    strategy:
-      max-parallel: 1
+    strategy:  # This 'strategy' is used to ship each stats-payload sequentially
+      max-parallel: 1  # This is used to prevent commit collisions when multiple jobs are trying to commit all at once
       matrix:
-        names: ['foo', 'bar', 'baz', 'qux', 'quuz']
+        names:
+          - foo1
+          - bar2
+          - baz3
     steps:
       - run: |
           echo "hi"
