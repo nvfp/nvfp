@@ -14,10 +14,11 @@ jobs:
       contents: write
     strategy:
       matrix:
-        names: ['foo', 'bar', 'baz']
+        names: ['foo', 'bar', 'baz', 'qux']
     steps:
       - run: |
           echo "hi"
+          sleep 30
           echo "names: ${{ matrix.names }}"
     #   - uses: actions/checkout@v3
     #   - run: |
