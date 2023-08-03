@@ -1,5 +1,12 @@
 import json
 import os
+import re
+
+
+def get_stats_name(file_name):
+    res = re.search(r'^update_(?P<name>\w+)\.py$', file_name)
+    if res is None: raise AssertionError(f'Invalid file name for stats-updater script: {repr(file_name)}.')
+    return res.group('name')
 
 
 def shipping(name, data):
