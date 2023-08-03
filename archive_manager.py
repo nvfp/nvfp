@@ -26,7 +26,7 @@ def main():
     print(f'DEBUG: NUM_ARCHIVES: {NUM_ARCHIVES}.')
 
     ## Target db
-    TARGET = os.path.join(NAME, f'archive-{NUM_ARCHIVES}')
+    TARGET = os.path.join(NAME, f'archive-{NUM_ARCHIVES}.json')
     print(f'DEBUG: TARGET: {repr(TARGET)}.')
 
     with open(TARGET, 'r') as f:
@@ -36,7 +36,7 @@ def main():
 
         if num_data == 7:  # Testing purposes
         # if num_data == 1000:
-            TARGET = os.path.join(NAME, f'archive-{NUM_ARCHIVES + 1}')
+            TARGET = os.path.join(NAME, f'archive-{NUM_ARCHIVES + 1}.json')
             print(f'DEBUG: New target: TARGET: {repr(TARGET)}.')
             db = []
 
