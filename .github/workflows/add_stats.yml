@@ -16,6 +16,7 @@ jobs:
         names:
           - update_num_pub_repos
           - update_num_stargazers
+          - update_num_commits
     steps:
       - uses: actions/checkout@v3
       - run: python scripts/${{ matrix.names }}.py
@@ -30,6 +31,6 @@ jobs:
         id: time
       - uses: scapeville/action-git-add-all-then-commit-then-push@v1
         with:
-          name: Stats $(date +'%Y %b %e, %l:%M %p')
+          name: Stats
           email: nicho@scapeville.com
           msg: "`${{ matrix.names }}` — ${{ steps.time.outputs.time }}"
