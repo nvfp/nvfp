@@ -13,15 +13,14 @@ jobs:
     permissions:
       contents: write  # For committing
     steps:
-      - uses: nvfp/Line-O-Saurus@0.5.4
+      - uses: nvfp/Line-O-Saurus@0.5.5
         with:
           git-name: Test lino
           git-email: nicho@scapeville.com
-          only-type: |
-            
-          ignore-type: |-
-            
-          # ignore-type: '[".foo", ".bar", ".baz"]'  # don't forget to use double instead of single quotes for JSON list
+          only-type: '[".txt", ".md", ".json"]'
+          ignore-type: |
+            - .foo
+            - .bar
           header: null
           footer: null
           custom-title: |-
@@ -29,16 +28,8 @@ jobs:
             _LINE_ lines of code stretch through _OWNER_'s repositories.
           num-shown: 3
           show-approx: true
-          card-titles: |-
-            - line: Lines of code
-            - type: Languages
-            - star: Stargazers
-            - stat: _OWNER_'s statistics
-          card-order: |-
-            - line
-            - type
-            - star
-            - stat
+          card-titles: '{"line": "foo", "star": "bar"}'
+          card-order: '["line", "star"]'
           prefer-extension: true
           show-credit: false
         env:
