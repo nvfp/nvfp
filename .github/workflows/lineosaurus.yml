@@ -2,21 +2,41 @@ name: Lineosaurus
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+    - cron: '0 0 * * *'  # Runs daily
+  workflow_dispatch:  # Update manually via 'Actions' tab
   push:
-    branches:
-      - mainx
+    branches: [main]
 
 jobs:
   run:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write  # For committing
     steps:
-      - uses: nvfp/Line-O-Saurus@0.5.1
+      - uses: nvfp/Line-O-Saurus@0.5.2
         with:
-          git-name: Lineosaurus
+          git-name: Test lino
           git-email: nicho@scapeville.com
+          only-type: null
+          ignore-type: null
+          header: null
+          footer: null
+          custom-title: |-
+            ~ Updated on _DATE_ ~
+            _LINE_ lines of code stretch through _OWNER_'s repositories.
+          num-shown: 3
+          show-approx: true
+          card-titles: |
+            - line: Lines of code
+            - type: Languages
+            - star: Stargazers
+            - stat: _OWNER_'s statistics
+          card-order: |
+            - line
+            - type
+            - star
+            - stat
+          prefer-extension: true
+          show-credit: false
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ github.token }}  # For GitHub CLI
