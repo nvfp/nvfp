@@ -20,7 +20,7 @@ jobs:
           only-type: |-
               - .py
               - .txt
-          ignore-type: "['.foo', '.bar', '.baz']"
+          ignore-type: '[".foo", ".bar", ".baz"]'  # don't forget to use double instead of single quotes for JSON list
           header: null
           footer: null
           custom-title: |-
