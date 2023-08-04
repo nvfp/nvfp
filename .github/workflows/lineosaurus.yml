@@ -18,9 +18,9 @@ jobs:
           git-name: Test lino
           git-email: nicho@scapeville.com
           only-type: |-
-            - .py
-            - .txt
-          ignore-type: "['.foo', '.bar', '.baz'"
+              - .py
+              - .txt
+          ignore-type: "['.foo', '.bar', '.baz']"
           header: null
           footer: null
           custom-title: |-
