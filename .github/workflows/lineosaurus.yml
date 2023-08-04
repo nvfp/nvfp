@@ -18,8 +18,7 @@ jobs:
           git-name: Test lino
           git-email: nicho@scapeville.com
           only-type: |-
-              - .py
-              - .txt
+            
           ignore-type: '[".foo", ".bar", ".baz"]'  # don't forget to use double instead of single quotes for JSON list
           header: null
           footer: null
