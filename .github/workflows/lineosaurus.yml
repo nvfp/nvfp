@@ -1,8 +1,8 @@
 name: Lineosaurus
 
 on:
-  schedule:
-    - cron: '0 0 * * *'  # Runs daily
+  # schedule:
+  #   - cron: '0 0 * * *'  # Runs daily
   workflow_dispatch:  # Update manually via 'Actions' tab
   push:
     branches: [main]
@@ -18,9 +18,7 @@ jobs:
           git-name: Test lino
           git-email: nicho@scapeville.com
           only-type: '[".txt", ".md", ".json"]'
-          ignore-type: |
-            - .foo
-            - .bar
+          ignore-type: [.txt, .md, .json]
           header: null
           footer: null
           custom-title: |-
