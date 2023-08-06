@@ -18,7 +18,9 @@ jobs:
           git-name: Test lino
           git-email: nicho@scapeville.com
           only-type: '[".txt", ".md", ".json"]'
-          ignore-type: '[.txt, .md, .json]'
+          ignore-type: |
+            - .foo
+            - .bar
           header: null
           footer: null
           custom-title: |-
