@@ -13,7 +13,7 @@ jobs:
     permissions:
       contents: write  # For committing
     steps:
-      - uses: nvfp/Line-O-Saurus@0.5.8
+      - uses: nvfp/Line-O-Saurus@0.5.9
         with:
           git-name: Test lino
           git-email: nicho@scapeville.com
