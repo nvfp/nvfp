@@ -4,8 +4,8 @@ on:
   # schedule:
   #   - cron: '0 0 * * *'  # Runs daily
   workflow_dispatch:  # Update manually via 'Actions' tab
-  push:
-    branches: [main]
+  # push:
+  #   branches: [main]
 
 jobs:
   run:
