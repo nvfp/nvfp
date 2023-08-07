@@ -1,3 +1,5 @@
+![dino](https://github.com/nvfp/nvfp/raw/main/assets/dino.jpg)
+
 ### ~ Updated on Aug 07, 2023 ~
 
 ### Over ROUND_ lines of code stretch through nvfp's repositories.
@@ -18,7 +20,7 @@ fast-pypi-release                   1.7K lines   2%
 Multilayered-Noise-Generator        1.7K lines   2%    
 Music-Visualizer                    1.7K lines   2%    
 Sudoku                              1.5K lines   2%    
-nvfp                                1.3K lines   2%    
+nvfp                                1.4K lines   2%    
 demo-testing                        1.2K lines   2%    
 demo-testing-web                    1.1K lines   2%    
 gh-action-simple-release              1K lines   1%    
@@ -35,7 +37,7 @@ PicPuff                              943 lines   1%
 11.6K  lines of .txt files                      16%  ▆▆  
 8.8K   lines of .js files                       12%  ▆   
 3.7K   lines of .yml files                       5%  ▆   
-2.4K   lines of .md files                        3%      
+2.6K   lines of .md files                        4%      
 1.6K   lines of  files                           2%      
 1.4K   lines of .scss files                      2%      
 990    lines of .css files                       1%      
@@ -71,10 +73,10 @@ LightCrop                           60 KiB   0%
 fast-pypi-release                   54 KiB   0%             
 Multilayered-Noise-Generator        53 KiB   0%             
 Music-Visualizer                    48 KiB   0%             
+nvfp                                45 KiB   0%             
 Sudoku                              44 KiB   0%             
 demo-testing-web                    40 KiB   0%             
 demo-testing                        35 KiB   0%             
-nvfp                                35 KiB   0%             
 gh-action-simple-release            31 KiB   0%             
 demo-2023                           29 KiB   0%             
 scapeville.com                      28 KiB   0%             
@@ -86,11 +88,11 @@ PicPuff                             28 KiB   0%
 ```txt
 number of repo     20                          
 top language       JSON, Python, and JavaScript
-lines of code      73,541                      
-total size         17.38 MiB                   
-number of chars    18,220,362                  
+lines of code      73,730                      
+total size         17.39 MiB                   
+number of chars    18,229,969                  
 number of stars    5                           
-number of commits  2,818                       
+number of commits  2,822                       
 number of files    1,393                       
 ```
 
@@ -103,8 +105,8 @@ number of files    1,393
 250.2K  characters of .js files                        1%             
 224.3K  characters of .txt files                       1%             
 102.2K  characters of .yml files                       1%             
-79.4K   characters of .md files                        0%             
-68.4K   characters of  files                           0%             
+88.9K   characters of .md files                        0%             
+68.5K   characters of  files                           0%             
 36.6K   characters of .html files                      0%             
 26.7K   characters of .scss files                      0%             
 20K     characters of .css files                       0%             
@@ -156,8 +158,8 @@ tweet-posts                        505 commits  18%  ▆▆
 nvfp.github.io                     501 commits  18%  ▆▆
 now-i-can-sleep                    345 commits  12%  ▆ 
 mykit                              280 commits  10%  ▆ 
-nvfp                               150 commits   5%  ▆ 
-Line-O-Saurus                      130 commits   5%  ▆ 
+nvfp                               153 commits   5%  ▆ 
+Line-O-Saurus                      131 commits   5%  ▆ 
 demo-testing                        98 commits   3%    
 carbon                              56 commits   2%    
 fast-pypi-release                   33 commits   1%    
