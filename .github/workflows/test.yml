@@ -26,8 +26,8 @@ jobs:
           eL.error('error again..')
           eL.endgroup()
         shell: python
-      # - run: |
-      #     import os
-      #     for k,v in os.environ.items():
-      #       print(k,v)
-      #   shell: python
+      - run: |
+          import os
+          for k,v in os.environ.items():
+            print(k,v)
+        shell: python
