@@ -15,36 +15,18 @@ jobs:
     steps:
       - uses: nvfp/Line-O-Saurus@v1.0.0b10
         with:
-          git-name: Test lino
+          git-name: Rrrrr
           git-email: nicho@scapeville.com
           only-type: null
-          ignore-type: |
-            - .sample
-            - .txt
+          ignore-type: null
           header: assets/Lineosaurus-header.md
           footer: null
           custom-title: |-
-            Over _LINES_ROUND_ lines of code stretch through _OWNER_'s repositories (last update: _DATE_).
+            Over _LINES_ROUND_ lines of code stretch through _OWNER_'s repositories
           num-shown: 100
           show-approx: true
-          card-titles: |
-            - type: #### Top languages
-            - stat: #### _OWNER_'s statistics
-            - line: #### Lines of code
-            - size: #### Repo sizes
-            - char: #### Number of characters
-            - star: #### Stargazers
-            - cmit: #### Total commits
-            - file: #### Total files
-          card-order: |
-            type
-            stat
-            line
-            size
-            char
-            star
-            cmit
-            file
+          card-titles: null
+          card-order: '["line"]'
           prefer-extension: true
           show-credit: true
         env:
