@@ -20,12 +20,13 @@ jobs:
           only-type: null
           ignore-type: null
           header: assets/Lineosaurus-header.md
-          footer: null
+          footer: assets/lino-footer.md
           custom-title: |-
             Over _LINES_ROUND_ lines of code stretch through _OWNER_'s repositories
-          num-shown: 100
+          num-shown: 5
           show-approx: true
-          card-titles: null
+          card-titles: |
+            - stat: foo
           card-order: '["line"]'
           prefer-extension: true
           show-credit: true
