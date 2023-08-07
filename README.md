@@ -10,6 +10,10 @@ carbon            7.8K lines  11%  ▆▆
 now-i-can-sleep     4K lines   5%  ▆   
 ```
 
-last update: Aug 7, 2023
+> last update: Aug 7, 2023
 
-Counted by [Lineosaurus](https://github.com/nvfp/Line-O-Saurus)
+*last update: Aug 7, 2023*
+
+> *last update: Aug 7, 2023*
+
+Counted by [Lineosaurus](https://github.com/nvfp/Line-O-Saurus) (1.0.0b11)
