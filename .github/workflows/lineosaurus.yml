@@ -13,7 +13,7 @@ jobs:
     permissions:
       contents: write  # For committing
     steps:
-      - uses: nvfp/Line-O-Saurus@0.6.3
+      - uses: nvfp/Line-O-Saurus@v1.0.0b0
         with:
           git-name: Test lino
           git-email: nicho@scapeville.com
@@ -22,14 +22,30 @@ jobs:
           header: assets/Lineosaurus-header.md
           footer: null
           custom-title: |-
-            ~ Updated on _DATE_ ~
+            ### ~ Updated on _DATE_ ~
 
-            ## _LINE_ lines of code stretch through _OWNER_'s repositories.
-          num-shown: 2
+            ### Over _LINES_ROUND_ lines of code stretch through _OWNER_'s repositories.
+          num-shown: 30
           show-approx: true
-          card-titles: '{"line": "foo", "star": "### bar"}'
-          card-order: '["line", "star"]'
+          card-titles: |
+            - line: #### title for 'line'
+            - type: #### title for 'type'
+            - size: #### title for 'size'
+            - stat: #### title for 'stat'
+            - char: #### title for 'char'
+            - star: #### title for 'star'
+            - cmit: #### title for 'cmit'
+            - file: #### title for 'file'
+          card-order: |
+            line
+            type
+            size
+            stat
+            char
+            star
+            cmit
+            file
           prefer-extension: true
-          show-credit: false
+          show-credit: true
         env:
           GH_TOKEN: ${{ github.token }}  # For GitHub CLI
