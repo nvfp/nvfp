@@ -25,7 +25,7 @@ jobs:
             ~ Updated on _DATE_ ~
 
             ## _LINE_ lines of code stretch through _OWNER_'s repositories.
-          num-shown: 30
+          num-shown: 2
           show-approx: true
           card-titles: '{"line": "foo", "star": "### bar"}'
           card-order: '["line", "star"]'
