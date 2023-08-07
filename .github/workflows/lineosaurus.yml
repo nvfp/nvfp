@@ -29,7 +29,7 @@ jobs:
           show-approx: true
           card-titles: |
             - line: #### title for 'line'
-            - type: #### title for 'type'
+            - type: #### Lines of code
             - size: #### title for 'size'
             - stat: #### title for 'stat'
             - char: #### title for 'char'
@@ -37,14 +37,7 @@ jobs:
             - cmit: #### title for 'cmit'
             - file: #### title for 'file'
           card-order: |
-            line
             type
-            size
-            stat
-            char
-            star
-            cmit
-            file
           prefer-extension: true
           show-credit: true
         env:
