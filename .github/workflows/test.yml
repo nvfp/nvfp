@@ -8,7 +8,7 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - run: pip install mykit==8.1.0b1
+      - run: pip install -U mykit
       - run: |
           from mykit.ghactions.eLog import eL
           eL.debug('debug')
