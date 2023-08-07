@@ -13,7 +13,7 @@ jobs:
     permissions:
       contents: write  # For committing
     steps:
-      - uses: nvfp/Line-O-Saurus@0.6.1
+      - uses: nvfp/Line-O-Saurus@0.6.2
         with:
           git-name: Test lino
           git-email: nicho@scapeville.com
@@ -26,10 +26,10 @@ jobs:
           custom-title: |-
             ~ Updated on _DATE_ ~
 
-            _LINE_ lines of code stretch through _OWNER_'s repositories.
+            ## _LINE_ lines of code stretch through _OWNER_'s repositories.
           num-shown: 3
           show-approx: true
-          card-titles: '{"line": "foo", "star": "bar"}'
+          card-titles: '{"line": "foo", "star": "### bar"}'
           card-order: '["line", "star"]'
           prefer-extension: true
           show-credit: false
