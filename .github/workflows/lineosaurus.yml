@@ -1,11 +1,13 @@
 name: Lineosaurus
 
 on:
-  # schedule:
-  #   - cron: '0 0 * * *'  # Runs daily
-  workflow_dispatch:  # Update manually via 'Actions' tab
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily
+  workflow_dispatch:     # Update manually via 'Actions' tab
+
+  ## The line `push:` below is for immediately updating your README.md for its first time.
+  ## After you've seen the update, you may want to comment/delete it out.
   push:
-    branches: [main]
 
 jobs:
   run:
@@ -13,22 +15,26 @@ jobs:
     permissions:
       contents: write  # For committing
     steps:
-      - uses: nvfp/Line-O-Saurus@v1.0.0b11
-        with:
-          git-name: Rrrrr
-          git-email: nicho@scapeville.com
-          only-type: null
-          ignore-type: null
-          header: assets/Lineosaurus-header.md
-          footer: assets/lino-footer.md
-          custom-title: |-
-            Over _LINES_ROUND_ lines of code stretch through _OWNER_'s repositories
-          num-shown: 5
-          show-approx: true
-          card-titles: |
-            - stat: foo
-          card-order: '["line"]'
-          prefer-extension: true
-          show-credit: true
+      - uses: nvfp/Line-O-Saurus@1.0b1
         env:
           GH_TOKEN: ${{ github.token }}  # For GitHub CLI
+        with:
+
+          ## required ##
+
+          git-name: Rrrrr
+          git-email: nicho@scapeville.com
+
+          ## options ##
+
+          header: assets/Lineosaurus-header.md
+          footer: '*last update: _DATE_ - Counted by [Lineosaurus v_VER_](https://github.com/nvfp/Line-O-Saurus)*'
+          custom-title: Over _LINES_ROUND_ lines of code stretch through _OWNER_'s repositories
+          card-order: |
+            - line
+
+
+          # flavor: compact by nvfp
+          # toppings:
+          #   - banner_path: https://github.com/nvfp/nvfp/raw/main/assets/dino.jpg
+          #   - banner_alt: dino
