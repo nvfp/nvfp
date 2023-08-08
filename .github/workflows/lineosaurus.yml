@@ -15,7 +15,7 @@ jobs:
     permissions:
       contents: write  # For committing
     steps:
-      - uses: nvfp/Line-O-Saurus@1.0b1
+      - uses: nvfp/Line-O-Saurus@main
         env:
           GH_TOKEN: ${{ github.token }}  # For GitHub CLI
         with:
@@ -38,3 +38,4 @@ jobs:
           # toppings:
           #   - banner_path: https://github.com/nvfp/nvfp/raw/main/assets/dino.jpg
           #   - banner_alt: dino
+          
