@@ -29,7 +29,7 @@ jobs:
 
           header: assets/Lineosaurus-header.md
           footer: '*last update: _DATE_ - Counted by [Lineosaurus v_VER_](https://github.com/nvfp/Line-O-Saurus)*'
-          custom-title: Over _LINES_ROUND_ lines of code stretch through _OWNER_'s repositories
+          show-credit: false
           card-order: |
             - line
 
@@ -38,4 +38,3 @@ jobs:
           # toppings:
           #   - banner_path: https://github.com/nvfp/nvfp/raw/main/assets/dino.jpg
           #   - banner_alt: dino
-          
