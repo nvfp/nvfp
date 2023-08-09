@@ -15,7 +15,7 @@ jobs:
     permissions:
       contents: write  # For committing
     steps:
-      - uses: nvfp/Line-O-Saurus@main
+      - uses: Lineosaurus/Lineosaurus@v1
         env:
           GH_TOKEN: ${{ github.token }}  # For GitHub CLI
         with:
@@ -28,13 +28,13 @@ jobs:
           ## options ##
 
           header: assets/Lineosaurus-header.md
-          footer: '*last update: _DATE_ - Counted by [Lineosaurus v_VER_](https://github.com/nvfp/Line-O-Saurus)*'
+          footer: '*last update: _DATE_ - Counted by [Lineosaurus v_VER_](https://github.com/Lineosaurus/Lineosaurus)*'
           show-credit: false
           card-order: |
             - line
 
 
           # flavor: compact by nvfp
-          # toppings:
+          # extras:
           #   - banner_path: https://github.com/nvfp/nvfp/raw/main/assets/dino.jpg
           #   - banner_alt: dino
