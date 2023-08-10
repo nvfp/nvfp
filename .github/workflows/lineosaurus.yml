@@ -22,19 +22,19 @@ jobs:
 
           ## required ##
 
-          git-name: Rrrrr
+          git-name: Stats update
           git-email: nicho@scapeville.com
 
           ## options ##
 
           header: assets/Lineosaurus-header.md
           footer: '*last update: _DATE_ - Counted by [Lineosaurus v_VER_](https://github.com/Lineosaurus/Lineosaurus)*'
+          custom-title: 'foo\n\nbar'
           show-credit: false
           card-order: |
             - line
 
-
           # flavor: compact by nvfp
-          # extras:
-          #   - banner_path: https://github.com/nvfp/nvfp/raw/main/assets/dino.jpg
-          #   - banner_alt: dino
+          # ingredients: |
+          #   - banner-path: https://github.com/nvfp/nvfp/raw/main/assets/dino.jpg
+          #   - banner-alt: dino
