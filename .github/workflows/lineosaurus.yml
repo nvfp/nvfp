@@ -34,5 +34,5 @@ jobs:
             - stat: #### _OWNER_'s statistics
           flavor: miniature by nvfp
           ingredients: |
-            - banner-path: https://github.com/nvfp/nvfp/raw/main/assets/dino.jpg
-            - banner-alt: dino's pics
+            - banner_path: https://github.com/nvfp/nvfp/raw/main/assets/dino.jpg
+            - banner_alt: dino's pics
