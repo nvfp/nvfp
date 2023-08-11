@@ -1,6 +1,6 @@
 ![dino's pics](https://github.com/nvfp/nvfp/raw/main/assets/dino.jpg)
 
-nvfp's repos (74,000 lines of code, 2953 commits, 18.2M chars)
+nvfp's repos (74,000 lines of code, 2956 commits, 18.2M chars)
 
 ```txt
 demo            568 commits  19%  ▆▆▆▆▆▆
