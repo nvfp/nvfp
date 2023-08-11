@@ -27,11 +27,6 @@ jobs:
 
           ## options ##
 
-          card-titles: |
-            - line: #### Lines of code
-            - type: #### Languages
-            - star: #### Stargazers
-            - stat: #### _OWNER_'s statistics
           flavor: miniature by nvfp
           ingredients: |
             - banner_path: https://github.com/nvfp/nvfp/raw/main/assets/dino.jpg
