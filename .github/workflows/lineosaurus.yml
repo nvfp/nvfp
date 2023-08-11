@@ -29,7 +29,7 @@ jobs:
 
           header: assets/Lineosaurus-header.md
           footer: '*last update: _DATE_ - Counted by [Lineosaurus v_VER_](https://github.com/Lineosaurus/Lineosaurus)*'
-          custom-title: 'foo\n\nbar'
+          custom-title: "foo\n\nbar"
           show-credit: false
           card-order: |
             - line
