@@ -35,4 +35,4 @@ jobs:
           flavor: compact by nvfp
           ingredients: |
             - banner-path: https://github.com/nvfp/nvfp/raw/main/assets/dino.jpg
-            - banner-alt: dino
+            - banner-alt: dino's pics
