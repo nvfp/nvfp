@@ -32,7 +32,7 @@ jobs:
             - type: #### Languages
             - star: #### Stargazers
             - stat: #### _OWNER_'s statistics
-          flavor: compact by nvfp
+          flavor: miniature by nvfp
           ingredients: |
             - banner-path: https://github.com/nvfp/nvfp/raw/main/assets/dino.jpg
             - banner-alt: dino's pics
