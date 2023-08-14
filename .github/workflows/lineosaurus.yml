@@ -23,11 +23,11 @@ jobs:
           ## required ##
 
           git-name: Stats update
-          git-email: nicho@scapeville.com
+          git-email: ${{ vars.NICHOLAS_EMAIL }}
 
           ## options ##
 
           flavor: miniature by nvfp
           ingredients: |
             - banner_path: https://github.com/nvfp/nvfp/raw/main/assets/dino.jpg
-            - banner_alt: dino's pics
+            - banner_alt: dino
