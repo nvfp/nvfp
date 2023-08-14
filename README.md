@@ -1,10 +1,10 @@
-![dino's pics](https://github.com/nvfp/nvfp/raw/main/assets/dino.jpg)
+![dino](https://github.com/nvfp/nvfp/raw/main/assets/dino.jpg)
 
-nvfp's repos (75,000 lines of code, 3015 commits, 18.3M chars)
+nvfp's repos (75,000 lines of code, 3022 commits, 18.3M chars)
 
 ```txt
 demo            568 commits  19%  ▆▆▆▆▆▆
-nvfp.github.io  536 commits  18%  ▆▆▆▆▆
+nvfp.github.io  541 commits  18%  ▆▆▆▆▆
 tweet-posts     505 commits  17%  ▆▆▆▆▆
 ```
 
