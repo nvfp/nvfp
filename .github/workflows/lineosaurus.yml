@@ -29,5 +29,5 @@ jobs:
 
           flavor: miniature by nvfp
           ingredients: |
-            - banner_path: https://github.com/nvfp/nvfp/raw/main/assets/dino.jpg
-            - banner_alt: dino
+            - banner_path: https://github.com/nvfp/nvfp/raw/main/assets/banner.jpg
+            - banner_alt: banner
