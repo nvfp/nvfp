@@ -1,33 +1,22 @@
 name: Lineosaurus
-
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily
-  workflow_dispatch:     # Update manually via 'Actions' tab
-
-  ## The line `push:` below is for immediately updating your README.md for its first time.
-  ## After you've seen the update, you may want to comment/delete it out.
+    - cron: '0 0 * * *'
+  workflow_dispatch:
   push:
-
 jobs:
   run:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # For committing
+      contents: write
     steps:
       - uses: Lineosaurus/Lineosaurus@v1
         env:
-          GH_TOKEN: ${{ github.token }}  # For GitHub CLI
+          GH_TOKEN: ${{ github.token }}
         with:
-
-          ## required ##
-
           git-name: Stats update
           git-email: ${{ vars.NICHOLAS_EMAIL }}
-
-          ## options ##
-
           flavor: miniature by nvfp
           ingredients: |
-            - banner_path: https://github.com/nvfp/nvfp/raw/main/assets/banner.jpg
+            - banner_path: https://github.com/nvfp/nvfp/raw/main/banner.jpg
             - banner_alt: banner
