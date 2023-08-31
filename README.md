@@ -1,8 +1,8 @@
-Keep shining on this Thursday! 🌷
+Have a fantastic Thursday! 🌹
 
-![banner](https://github.com/nvfp/nvfp/raw/main/assets/banner.jpg)
+![banner](https://github.com/nvfp/nvfp/raw/main/banner.jpg)
 
-nvfp's repos (84,398 lines of code, 3,322 commits, 18,567,458 chars)
+nvfp's repos (84,046 lines of code, 3,326 commits, 18,559,768 chars)
 
 ```txt
 nvfp.github.io  741 commits  22%  ▆▆▆▆▆▆▆
