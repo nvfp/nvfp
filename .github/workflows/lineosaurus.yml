@@ -18,5 +18,5 @@ jobs:
           git-email: ${{ vars.NICHOLAS_EMAIL }}
           flavor: miniature by nvfp
           ingredients: |
-            - banner_path: https://github.com/nvfp/nvfp/raw/main/banner.jpg
+            - banner_path: https://github.com/nvfp/nvfp/raw/main/assets/banner.jpg
             - banner_alt: banner
