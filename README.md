@@ -1,8 +1,8 @@
-May your Monday be wonderful! 🌸
+Hey there! Have a great Monday! 🌈
 
-![banner](https://github.com/nvfp/nvfp/raw/main/banner.jpg)
+![banner](https://github.com/nvfp/nvfp/raw/main/assets/banner.jpg)
 
-nvfp's repos (87,356 lines of code, 3,512 commits, 18,664,850 chars)
+nvfp's repos (87,356 lines of code, 3,514 commits, 18,664,855 chars)
 
 ```txt
 nvfp.github.io  762 commits  22%  ▆▆▆▆▆▆▆
