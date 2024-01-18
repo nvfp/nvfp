@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions: { contents: write }  # for committing
     steps:
-      - uses: Lineosaurus/Lineosaurus@2.0
+      - uses: Lineosaurus/Lineosaurus@2.1
         env:
           GH_TOKEN: ${{ github.token }}  # for GitHub CLI
         with:
