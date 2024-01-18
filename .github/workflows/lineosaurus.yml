@@ -1,22 +1,17 @@
 name: Lineosaurus
-on:
-  schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
-  push:
+on: { schedule: [{ cron: '0 0,12 * * *' }], workflow_dispatch: null, push: null }
 jobs:
   run:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    permissions: { contents: write }  # for committing
     steps:
-      - uses: Lineosaurus/Lineosaurus@v1
+      - uses: Lineosaurus/Lineosaurus@2.0
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ github.token }}  # for GitHub CLI
         with:
-          git-name: Stats update
-          git-email: ${{ vars.NICHOLAS_EMAIL }}
-          flavor: miniature by nvfp
-          ingredients: |
-            - banner_path: https://github.com/nvfp/nvfp/raw/main/assets/banner.jpg
-            - banner_alt: banner
+          nickname: NVfp
+          banner: ./assets/banner.jpg
+          include_last_activity: true
+          gitname: NV and Lino
+          gitemail: ${{ vars.MY_EMAIL }}
+          credit: true
