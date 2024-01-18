@@ -1,13 +1,14 @@
-Hey there! Have a great Thursday! 🌈
+Wishing you an amazing Thursday! 🎉
 
-![banner](https://github.com/nvfp/nvfp/raw/main/assets/banner.jpg)
+![banner](./assets/banner.jpg)
 
-nvfp's repos (73,099 lines of code, 3,990 commits, 18,470,386 chars)
+nvfp's repos (73,094 lines of code, 3,992 commits, 18,470,378 chars)
 
-```txt
-nvfp.github.io  813 commits  20%  ▆▆▆▆▆▆
-demo            568 commits  14%  ▆▆▆▆
-tweet-posts     515 commits  13%  ▆▆▆▆
+```python
+Repos I was working on lately:
+→ nvfp[January 18, 4:49PM], nvfp/mykit[Mon, Jan 15, 2024, 9:42AM utc+0000], nvfp/QWD[Monday, 9:13AM utc+0000]
 ```
 
-<sub>last update: Jan 18, 2024 - Counted by [Lineosaurus v1.1](https://github.com/Lineosaurus/Lineosaurus)</sub>
+NVfp made 66 commits in the last week, simply amazing!
+
+<sub>last update: Jan 18, 2024 - Counted by [Lineosaurus(main)](https://github.com/Lineosaurus/Lineosaurus)</sub>
