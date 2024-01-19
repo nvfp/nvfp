@@ -2,13 +2,13 @@ May your Friday be wonderful! 🌸
 
 ![banner](./assets/banner.jpg)
 
-nvfp's repos (73,249 lines of code, 3,997 commits, 18,475,751 chars)
+nvfp's repos (73,249 lines of code, 3,998 commits, 18,475,854 chars)
 
 ```python
 Repos I was working on lately:
-→ nvfp/nvfp.github.io[Thursday, 7:08PM], nvfp/nvfp[Thu, Jan 18, 2024, 5:12PM utc+0000], mykit[Monday, 9:42AM]
+→ nvfp[Fri, Jan 19, 2024, 12:35AM], nvfp.github.io[Thursday, 7:08PM utc+0000], nvfp/mykit[January 15, 9:42AM utc+0000]
 ```
 
-NVfp made 64 commits in the last week, simply amazing!
+NVfp made 52 commits in the last week, simply amazing!
 
-<sub>last update: Jan 19, 2024 - Counted by [Lineosaurus(2.1)](https://github.com/Lineosaurus/Lineosaurus)</sub>
+<sub>last update: 2024 Jan 19 - Counted by [Lineosaurus(2.1)](https://github.com/Lineosaurus/Lineosaurus)</sub>
