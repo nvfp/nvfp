@@ -1,12 +1,12 @@
-This Saturday is awesome!
+Happy Saturday!
 
 ![banner](./assets/banner.jpg)
 
-nvfp's repos (75,922 lines of code, 4,044 commits, 18,565,939 chars)
+nvfp's repos (75,922 lines of code, 4,045 commits, 18,565,828 chars)
 
 ```python
 Repos I was working on lately:
-→ nvfp/nvfp.github.io[Jan 26], nvfp/ghact_minify_htmls[Jan 23, 5:01AM], ghact_auto_permalink[Mon, Jan 22, 2024]
+→ nvfp.github.io[Jan 26], ghact_minify_htmls[Tuesday, 5:01AM utc+0000], nvfp/ghact_auto_permalink[Mon, Jan 22, 2024]
 ```
 
-NVfp made 45 commits in the last week, incredibly impressive!<sub> ~ last update: 2024 January 27 - Counted by [Lineosaurus(v2)](https://github.com/Lineosaurus/Lineosaurus)</sub>
+NVfp made 43 commits in the last week, simply amazing!<sub> ~ last update: 2024 January 27 - By [Lineosaurus(v2)](https://github.com/Lineosaurus/Lineosaurus)</sub>
