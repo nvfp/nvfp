@@ -1,17 +1,17 @@
 name: Lineosaurus
-on: { schedule: [{ cron: '0 0,12 * * *' }], workflow_dispatch: null, push: null }
+on: { schedule: [{ cron: '0 0 * * *' }], workflow_dispatch: null, push: null }
 jobs:
   run:
     runs-on: ubuntu-latest
     permissions: { contents: write }  # for committing
     steps:
-      - uses: Lineosaurus/Lineosaurus@v2
+      - uses: Lineosaurus/Lineosaurus@v3
         env:
           GH_TOKEN: ${{ github.token }}  # for GitHub CLI
         with:
           nickname: NVfp
           banner: ./assets/banner.jpg
           include_last_activity: true
-          gitname: NV and Lino
+          gitname: NV_Lino
           gitemail: ${{ vars.MY_EMAIL }}
           credit: true
