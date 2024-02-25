@@ -1,9 +1,9 @@
-Have a great Sunday!
+Keep shining on this Sunday! 🌷
 
 ![banner](./assets/banner.jpg)
 
-There are 74,950 lines of code and 18,545,870 characters across 31 nvfp's repositories.
+73,098 lines of code and 18,486,845 chars across nvfp's repos.
 
-*Last repo I worked on is `nvfp/nvfp.github.io` (Feb 24, 2024), and it's JavaScript!*
+*Last repo I worked on is `nvfp/nvfp.github.io` (Saturday, Feb 24)*
 
-NVfp made 2 commits in the last week, what an awesome!<sub> ~ last update: 2024 February 25 - By [Lineosaurus(v3)](https://github.com/Lineosaurus/Lineosaurus)</sub>
+NVfp made 2 commits in the last week, really great!<sub> ~ last update: Feb 25, 2024 - ❤️ [Lineosaurus(v4)](https://github.com/Lineosaurus/Lineosaurus)</sub>
