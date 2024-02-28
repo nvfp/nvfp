@@ -1,9 +1,7 @@
-Wish you an awesome Wednesday! 🌼
+Hey there! Have a great Wednesday! 🌈
 
 ![banner](./assets/banner.jpg)
 
-43,128 lines of code and 17,584,361 chars across nvfp's repos.
+41,418 lines of code and 17,529,096 chars across nvfp's repos.
 
-*Last repo I worked on is `nvfp/nvfp.github.io` (Tuesday, Feb 27)*
-
-NVfp made 7 commits in the last week, wonderful!<sub> ~ last update: Feb 28, 2024 - ❤️ [Lineosaurus(v4)](https://github.com/Lineosaurus/Lineosaurus)</sub>
+NVfp made 7 commits in the last week, awesome!<sub> ~ last update: 2024 February 28 - By [Lineosaurus(v5)](https://github.com/Lineosaurus/Lineosaurus)</sub>
